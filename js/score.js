@@ -7,7 +7,6 @@ function scoreCount(){
   //游戏结束
   if(plane===null){
     document.getElementById('score2').innerHTML=score;
-    score=0;
     return;
   }
   context.fillText("分数："+score,20,20);

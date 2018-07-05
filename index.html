@@ -13,7 +13,7 @@
       <section class="game-intro game-ui">
         <h1 class="section-title">射击游戏</h1>
         <p class="game-desc">这是一个令人欲罢不能的射击游戏，使用 ← 和 → 操作你的飞机，使用空格（space）进行射击。一起来消灭宇宙怪兽吧！</p>
-        <p class="game-level">当前Level: 1</p>
+        <p class="game-level">当前Level: <span class="level" id="level1"></span></p>
         <button class="js-play button">开始游戏</button>
       </section>
       <section class="game-failed game-ui">
@@ -23,7 +23,7 @@
       </section>
       <section class="game-success game-ui">
         <h1 class="section-title">游戏成功</h1>
-        <p class="game-next-level game-info-text"></p>
+        <p class="game-next-level game-info-text">下一关卡：<span class="level" id="level2"></span></p>
         <button class="js-next button">继续游戏</button>
       </section>
       <section class="game-all-success game-ui">
@@ -38,13 +38,15 @@
     </canvas>
   </div>
   <!-- 主逻辑函数 -->
+  <script src="./config.js"></script>
   <script src="./js/canvas.js"></script>
   <script src="./js/plane.js"></script>
   <script src="./js/monster.js"></script>
   <script src="./js/bullet.js"></script>
+  <script src="./js/score.js"></script>
   <script src="./js/gameover.js"></script>
   <script src="./js/gamesuccess.js"></script>
+  <script src="./js/gameallsuccess.js"></script>
   <script src="./js/app.js" ></script>
-  <script src="./js/score.js"></script>
 </body>
 </html>
